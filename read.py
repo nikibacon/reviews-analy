@@ -22,4 +22,12 @@ print('留言平均長度總共有', avg_len, '個字')
 print('第一筆留言:')
 print(data[0])
 
+#篩選概念
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆留言長度小於100')
+
 
